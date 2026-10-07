@@ -1,8 +1,10 @@
 services : 
   app: 
     build: . 
+    container_name : ai_api 
     ports : 
       - "8000:8000"
     
   redis : 
+    container_name: ai_redis 
     image: redis:7-alpine 
